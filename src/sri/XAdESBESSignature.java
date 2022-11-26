@@ -53,8 +53,8 @@ public class XAdESBESSignature
     datosAFirmar.setEsquema(XAdESSchemas.XAdES_132);
     datosAFirmar.setXMLEncoding("UTF-8");
     datosAFirmar.setEnveloped(true);
-    datosAFirmar.addObject(new ObjectToSign(new InternObjectToSign("comprobante"), "contenido comprobante", null, "text/xml", null));
-    datosAFirmar.setParentSignNode("comprobante");
+    datosAFirmar.addObject(new ObjectToSign(new InternObjectToSign(), "contenido comprobante", null, "text/xml", null));
+    datosAFirmar.setParentSignNode();
      
     Document docToSign = null;
       try {
